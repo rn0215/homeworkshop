@@ -1,0 +1,12 @@
+{% extends "student/base.html" %}
+
+{% block bodyblock %}
+    <h1>{{student.name}}</h1>
+    <h3>{{student.email}}</h3>
+    <h5>{{student.birthday}}</h5>
+    <h5>{{student.age}}</h5>
+    <a href="/student/{{student.id}}/delete/">삭제</a>
+    <a href="/student/{{student.id}}/edit/">수정</a>
+
+
+{% endblock %}
